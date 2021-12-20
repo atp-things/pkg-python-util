@@ -3,11 +3,11 @@
 ## Install
 
 ```bash
-
+pip install atpthings
 ```
 
 ## Import
 
-```bash
-
+```python
+import atpthings
 ```
