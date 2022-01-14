@@ -40,19 +40,23 @@ jobs:
           miniconda-version: "latest"
           activate-environment: test
           python-version: "3.7"
+
       - name: Conda info
         run: conda info
       - name: Conda list
         run: conda list
 
       - name: Install dependencies
-        run: conda install -y conda-build anaconda anaconda-client
+        run: |
+          conda install -y conda-build anaconda anaconda-client
+          conda config --set anaconda_upload no
+      - name: Anaconda version
+        run: anaconda -V
       - name: Conda list
         run: conda list
       - name: Conda build pkg
         run: conda build  ./conda.recipe/ --output-folder ./build
-      - name: Anaconda version
-        run: anaconda -V
+
       - name: pwd
         run: pwd
       - name: ls1
