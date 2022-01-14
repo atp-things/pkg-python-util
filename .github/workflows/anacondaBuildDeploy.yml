@@ -31,9 +31,6 @@ jobs:
         run: |
           # $CONDA is an environment variable pointing to the root of the miniconda directory
           echo $CONDA/bin >> $GITHUB_PATH
-      - name: Install dependencies
-        run: |
-          conda env update --file environment.yml --name test
 
       # - uses: conda-incubator/setup-miniconda@v2
       #   with:
@@ -41,15 +38,10 @@ jobs:
       #     activate-environment: test
       #     python-version: "3.7"
 
-      - name: Conda info
-        run: conda info
-      - name: Conda list
-        run: conda list
-
       - name: Install dependencies
         run: |
+          conda env update --file environment.yml --name test
           conda install -y conda-build anaconda anaconda-client
-          conda config --set anaconda_upload no
       - name: Anaconda version
         run: anaconda -V
       - name: Conda list
@@ -57,19 +49,10 @@ jobs:
       - name: Conda build pkg
         run: conda build  ./conda.recipe/ --output-folder ./build
 
-      - name: pwd
-        run: pwd
-      - name: ls1
-        run: ls -l
-      - name: ls2
-        run: ls -l ./build/
-      - name: ls3
-        run: ls -l ./build/noarch/
-
       - name: Deploy to anaconda.org
         run: |
           pkg_file="./build/noarch/*-py_0.tar.bz2"
-          anaconda upload -t ${{ secrets.ANACONDA_API_TOKEN }} $pkg_file
+          anaconda upload -u andrazpolak -t ${{ secrets.ANACONDA_API_TOKEN }}  $pkg_file
 
       # - name: Install dependencies
       #   shell: bash -l {0}
