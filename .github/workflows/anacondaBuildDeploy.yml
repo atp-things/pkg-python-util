@@ -45,7 +45,7 @@ jobs:
       - name: Conda list
         run: conda list
       - name: Install conda-build
-        run: install conda-build
+        run: conda install conda-build
       - name: Conda build pkg
         shell: bash -l {0}
         run: conda build  ./conda.recipe/ --output-folder ./build
