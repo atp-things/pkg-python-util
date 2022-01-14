@@ -18,6 +18,35 @@
       "label": "UnitTests_RunAll",
       "type": "shell",
       "command": "python3 -m unittest tests/test*.py"
+    },
+    // Docusaurus
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "website/",
+      "problemMatcher": [],
+      "label": "Docusaurus - dev"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "website/",
+      "problemMatcher": [],
+      "label": "Docusaurus - build"
+    },
+    {
+      "type": "npm",
+      "script": "serve",
+      "path": "website/",
+      "problemMatcher": [],
+      "label": "Docusaurus - serve"
+    },
+    {
+      "type": "npm",
+      "script": "deploy",
+      "path": "website/",
+      "problemMatcher": [],
+      "label": "Docusaurus - deploy"
     }
   ]
 }
