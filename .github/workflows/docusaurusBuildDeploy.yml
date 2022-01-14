@@ -3,13 +3,18 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    # paths: [website/**]
+    # paths:
+    #   - '.github/workflows/docusaurusBuildDeploy.yml'
+    #   - 'website/**'
   workflow_dispatch:
 
 jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
     steps:
       - uses: actions/checkout@v2
       - name: Check folder 1
@@ -17,7 +22,6 @@ jobs:
           pwd 
           ls
       - name: Check folder 2
-        working-directory: ./website
         run: |
           pwd 
           ls
