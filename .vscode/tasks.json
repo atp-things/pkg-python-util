@@ -3,6 +3,7 @@
   // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
+    // PyPI build and deploy
     {
       // remove previosu bulds
       "label": "PyPIPackage - build",
@@ -18,6 +19,44 @@
       "label": "UnitTests_RunAll",
       "type": "shell",
       "command": "python3 -m unittest tests/test*.py"
+    },
+    // Conda - package
+    {
+      "label": "Conda - pkgBuild",
+      "type": "shell",
+      "command": "conda build  ./conda.recipe/ --output-folder ./build"
+    },
+    // {
+    //   "label": "Conda - pkgUpload",
+    //   "type": "shell",
+    //   "command": "anaconda",
+    //   "args": ["upload", "./build/noarch/*-py_0.tar.bz2"],
+    //   "options": {
+    //     "env": {
+    //       "ANACONDA_API_TOKEN": "an-e6df2241-ae6f-4470-9f70"
+    //     }
+    //   }
+    // },
+    // Conda - dev enviroement
+    {
+      "label": "CondaEnv - deactivate",
+      "type": "shell",
+      "command": "conda deactivate"
+    },
+    {
+      "label": "Conda - localEnvCreate",
+      "type": "shell",
+      "command": "conda env create --prefix ./env --file environment.yml"
+    },
+    {
+      "label": "Conda - localEnvUpdate",
+      "type": "shell",
+      "command": "conda env update --prefix ./env --file environment.yml --prune"
+    },
+    {
+      "label": "Conda - localEnvExport",
+      "type": "shell",
+      "command": "conda-env export --prefix ./env --file environmentExport.yml"
     },
     // Docusaurus
     {

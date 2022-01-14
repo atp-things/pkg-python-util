@@ -1,0 +1,17 @@
+channels:
+  - conda-forge
+  - defaults
+  - andrazpolak
+
+dependencies:
+  # required
+  - numpy
+  - python
+
+  # lint
+  - black
+
+  # testing
+  - pytest
+
+name: "default"
