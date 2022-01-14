@@ -28,9 +28,9 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          path: website
-          node-version: 14.x
+          node-version: "14"
           cache: yarn
+          cache-dependency-path: website
       - name: Build website
         working-directory: ./website
         run: |
