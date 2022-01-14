@@ -12,27 +12,17 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    # defaults:
-    #   run:
-    #     working-directory: website
+    defaults:
+      run:
+        working-directory: website
     steps:
       - uses: actions/checkout@v2
-      - name: Check folder 1
-        run: |
-          pwd 
-          ls
-      - name: Check folder 2
-        run: |
-          pwd 
-          ls
-
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
           cache: yarn
           cache-dependency-path: website
       - name: Build website
-        working-directory: ./website
         run: |
           yarn install --frozen-lockfile
           yarn build
@@ -43,7 +33,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
-          publish_dir: ./website/build
+          publish_dir: ./build
           # Assign commit authorship to the official GH-Actions bot for deploys to `gh-pages` branch:
           # https://github.com/actions/checkout/issues/13#issuecomment-724415212
           # The GH actions bot is used by default if you didn't specify the two fields.
