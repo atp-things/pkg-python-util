@@ -30,3 +30,8 @@ requirements:
 #     - tests
 #   commands:
 #     - pytest -v tests
+
+about:
+  home: {{ sdata.get('url') }}
+  license: {{ sdata.get('license') }}
+  summary: {{ sdata.get('description') }}
