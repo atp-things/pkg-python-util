@@ -16,6 +16,15 @@ jobs:
         with:
           node-version: 14.x
           cache: yarn
+      - name: Check folder 1
+        run: |
+          pwd 
+          ls
+      - name: Check folder 2
+        working-directory: ./website
+        run: |
+          pwd 
+          ls
       - name: Build website
         working-directory: ./website
         run: |
