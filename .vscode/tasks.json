@@ -58,6 +58,19 @@
       "type": "shell",
       "command": "conda-env export --prefix ./env --file environmentExport.yml"
     },
+
+    // git
+    {
+      "label": "Git - create tag",
+      "type": "shell",
+      "command": "git tag -a v0.0.10 -m \"Verion 0.0.10\""
+    },
+    {
+      "label": "Git - push tags",
+      "type": "shell",
+      "command": "git push origin --tags"
+    },
+
     // Docusaurus
     {
       "type": "npm",
