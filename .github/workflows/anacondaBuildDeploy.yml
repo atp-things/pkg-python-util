@@ -11,8 +11,10 @@ name: Upload Python Package to Anaconda
 on:
   push:
     branches: [main]
-  release:
-    types: [created]
+    tags:
+      - "v*.*.*"
+  # release:
+  #   types: [created]
   workflow_dispatch:
 
 jobs:
@@ -38,18 +40,8 @@ jobs:
           conda config --append channels  https://conda.anaconda.org/pyviz/
           conda install -y conda-build anaconda-client
           conda config --set anaconda_upload no
-      - name: Show channels
-        run: conda config --show channels
       - name: Anaconda Show
         run: conda config --show
-      - name: Anaconda version
-        run: anaconda -V
-      - name: Conda list
-        run: conda list
-      - name: Conda env list
-        run: conda env list
-      - name: Conda list in
-        run: conda list in
       - name: Conda build pkg
         run: conda build  ./conda.recipe/ --output-folder ./build
 
@@ -59,7 +51,7 @@ jobs:
         with:
           files: ./build/noarch/*-py_0.tar.bz2
 
-      - name: Deploy to anaconda.org
-        run: |
-          pkg_file="./build/noarch/*-py_0.tar.bz2"
-          anaconda -t ${{ secrets.ANACONDA_API_TOKEN }} upload $pkg_file
+      # - name: Deploy to anaconda.org
+      #   run: |
+      #     pkg_file="./build/noarch/*-py_0.tar.bz2"
+      #     anaconda -t ${{ secrets.ANACONDA_API_TOKEN }} upload $pkg_file
