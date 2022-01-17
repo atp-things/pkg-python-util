@@ -53,13 +53,13 @@ jobs:
       - name: Conda build pkg
         run: conda build  ./conda.recipe/ --output-folder ./build
 
-      - name: Deploy to anaconda.org
-        run: |
-          pkg_file="./build/noarch/*-py_0.tar.bz2"
-          anaconda -t ${{ secrets.ANACONDA_API_TOKEN }} upload $pkg_file
-
       - name: Release (github)
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: ./build/noarch/*-py_0.tar.bz2
+
+      - name: Deploy to anaconda.org
+        run: |
+          pkg_file="./build/noarch/*-py_0.tar.bz2"
+          anaconda -t ${{ secrets.ANACONDA_API_TOKEN }} upload $pkg_file
