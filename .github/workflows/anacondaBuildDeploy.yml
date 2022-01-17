@@ -32,13 +32,16 @@ jobs:
           # $CONDA is an environment variable pointing to the root of the miniconda directory
           echo $CONDA/bin >> $GITHUB_PATH
       - name: Install dependencies
+        shell: bash -l {0}
         run: |
           conda env update --file environment.yml --name test
       # TODO: Activate env does not work
       - name: activate env
+        shell: bash -l {0}
         run: |
           conda activate /usr/share/miniconda/envs/test
       - name: Install
+        shell: bash -l {0}
         run: |
           conda install -y conda-build anaconda-client
           conda config --set anaconda_upload no
