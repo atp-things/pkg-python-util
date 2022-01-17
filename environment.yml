@@ -9,8 +9,6 @@ dependencies:
   - numpy
   - python
 
-  - intake
-  - intake-dremio>=0.2.1
   # lint
   - black
 
