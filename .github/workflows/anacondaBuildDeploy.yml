@@ -10,7 +10,7 @@ name: Upload Python Package to Anaconda
 
 on:
   push:
-    branches: [main]
+    # branches: [main]
     tags:
       - "v*.*.*"
   workflow_dispatch:
