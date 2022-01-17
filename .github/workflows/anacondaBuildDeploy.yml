@@ -49,6 +49,8 @@ jobs:
         run: anaconda -V
       - name: Conda list
         run: conda list
+      - name: Conda env list
+        run: conda env list
       - name: Conda list in
         run: conda list in
       - name: Conda build pkg
