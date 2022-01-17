@@ -9,11 +9,9 @@ dependencies:
   - numpy
   - python
 
-  - intake-dremio>=0.2.1
+  # - intake-dremio>=0.2.1
   # lint
   - black
 
   # testing
   - pytest
-
-name: "default"
