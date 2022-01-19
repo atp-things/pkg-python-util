@@ -3,14 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ATPthings documentation
-=====================================
+
+:github_url: https://github.com/atp-things/pkg-python-util
+
+ATPthings API Reference
+===================================
 
 
-Util
-=============
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-.. toctree:: atpthings
+.. toctree::
+   :maxdepth: 1
+   :caption: API Reference
+
    atpthings.util
 
+
+
+Indices and Tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 

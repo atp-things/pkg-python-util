@@ -1,21 +1,8 @@
-atpthings.util package
+ATPthings util 
 ======================
-
-Submodules
-----------
-
-atpthings.util.dataframe module
--------------------------------
+.. automodule:: atpthings.util
+   :members:
 
 .. automodule:: atpthings.util.dataframe
    :members:
-   :undoc-members:
-   :show-inheritance:
 
-Module contents
----------------
-
-.. automodule:: atpthings.util
-   :members:
-   :undoc-members:
-   :show-inheritance:
