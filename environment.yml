@@ -14,3 +14,9 @@ dependencies:
 
   # testing
   - pytest
+
+  # documentation
+  - sphinx
+
+  - pip:
+      - sphinx-rtd-theme
