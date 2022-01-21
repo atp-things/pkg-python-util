@@ -12,14 +12,9 @@ ATPthings API Reference
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: API Reference
 
    atpthings.util
-
+   atpthings.client_redis
 
 
 Indices and Tables

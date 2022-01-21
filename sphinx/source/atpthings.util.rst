@@ -1,8 +1,5 @@
-ATPthings util 
-======================
 .. automodule:: atpthings.util
-   :members:
+  :members:
 
 .. automodule:: atpthings.util.dataframe
-   :members:
-
+  :members:
