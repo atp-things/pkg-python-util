@@ -20,5 +20,3 @@ dependencies:
   - numpydoc
   - pydata-sphinx-theme
 
-  - pip:
-      - sphinx-rtd-theme

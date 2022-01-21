@@ -58,6 +58,12 @@
       "type": "shell",
       "command": "conda-env export --prefix ./env --file environmentExport.yml"
     },
+    // Sphinx build
+    {
+      "label": "Sphinx - build html",
+      "type": "shell",
+      "command": "./scripts/sphinixBuild.sh"
+    },
 
     // git
     {
