@@ -2,5 +2,6 @@
   "files.associations": {
     "**/conda.recipe/meta.yaml": "jinja"
   },
-  "jupyter.jupyterServerType": "local"
+  "jupyter.jupyterServerType": "local",
+  "restructuredtext.confPath": "${workspaceFolder}/env/lib/python3.10/site-packages/numpydoc/tests/tinybuild"
 }

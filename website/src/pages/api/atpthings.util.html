@@ -1,0 +1,86 @@
+
+<script type="text/javascript" id="documentation_options" data-url_root="./" src="/js/documentation_options.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/underscore.js"></script>
+<script type="text/javascript" src="/js/doctools.js"></script>
+<script type="text/javascript" src="/js/language_data.js"></script>
+<script type="text/javascript" src="/js/searchtools.js"></script>
+<div class="sphinx"><div>
+<span class="target" id="module-atpthings.util"></span><section id="atpthings-utilities">
+<h1>ATPthings: Utilities<a class="headerlink" href="#atpthings-utilities" title="Permalink to this headline">¶</a></h1>
+<p>Basic utilities of ATPthings</p>
+</section>
+<span class="target" id="module-atpthings.util.dataframe"></span><section id="atpthings-pandas-dataframe">
+<h1>ATPthings: Pandas.DataFrame<a class="headerlink" href="#atpthings-pandas-dataframe" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="atpthings.util.dataframe.add_one">
+<span class="sig-prename descclassname"><span class="pre">atpthings.util.dataframe.</span></span><span class="sig-name descname"><span class="pre">add_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#atpthings.util.dataframe.add_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add one</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – write number</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>return the number</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="atpthings.util.dataframe.add_sum">
+<span class="sig-prename descclassname"><span class="pre">atpthings.util.dataframe.</span></span><span class="sig-name descname"><span class="pre">add_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">number2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">number3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#atpthings.util.dataframe.add_sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sum</p>
+<p>Sum all three numbers</p>
+<dl class="simple">
+<dt>number1:</dt><dd><p>Number one.</p>
+</dd>
+<dt>number2:</dt><dd><p>Number two.</p>
+</dd>
+<dt>number3:</dt><dd><p>Number three.</p>
+</dd>
+</dl>
+<blockquote>
+<div><p>N arrays with N dimensions each, with N the number of input
+sequences. Together these arrays form an open mesh.</p>
+</div></blockquote>
+<p>add_two</p>
+<p>This is really just <cite>rfftn</cite> with different default behavior.
+For more details see <cite>rfftn</cite>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">texthero</span> <span class="k">as</span> <span class="nn">hero</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="s2">"1234 falcon9"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hero</span><span class="o">.</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">replace_digits</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">)</span>
+<span class="go">0    X falcon9</span>
+<span class="go">dtype: object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hero</span><span class="o">.</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">replace_digits</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="n">only_blocks</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">0    X falconX</span>
+<span class="go">dtype: object</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">texthero</span> <span class="k">as</span> <span class="nn">hero</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="s2">"1234 falcon9"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hero</span><span class="o">.</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">replace_digits</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="atpthings.util.dataframe.add_two">
+<span class="sig-prename descclassname"><span class="pre">atpthings.util.dataframe.</span></span><span class="sig-name descname"><span class="pre">add_two</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#atpthings.util.dataframe.add_two" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add two</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – write number</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>return the number</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+</section>
+</div></div>

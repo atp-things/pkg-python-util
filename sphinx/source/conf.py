@@ -51,21 +51,29 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # github_project_url = "https://github.com/atp-things/pkg-python-util"
 # -- Options for HTML output -------------------------------------------------
 
+pygments_style = "sphinx"
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
+# html_theme = "alabaster"
 
 # Logo
 # html_logo = '_static/numpylogo.svg'
 # html_favicon = '_static/favicon/favicon.ico'
 
-html_theme_options = {
-    "logo_link": "index",
-    "github_url": "https://github.com/atp-things/pkg-python-util",
-    "collapse_navigation": True,
-}
+# html_theme_options = {
+#     "logo_link": "index",
+#     "github_url": "https://github.com/atp-things/pkg-python-util",
+#     "collapse_navigation": True,
+# }
 
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False
+
+# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+html_show_copyright = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
