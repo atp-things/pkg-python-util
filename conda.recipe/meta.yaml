@@ -21,15 +21,6 @@ requirements:
     - {{ dep }}
     {% endfor %}
 
-# test:
-#   imports:
-#     - atpthings
-#   requires:
-#     - pytest
-#   source_files:
-#     - tests
-#   commands:
-#     - pytest -v tests
 
 about:
   home: {{ sdata.get('url') }}
