@@ -1,6 +1,8 @@
-"""ATPthings: The IoT Tool
+"""
+atpthings
+=========
 
-Description uhfiasjflskjo
+ATP Things python package
 
 """
 from . import example123

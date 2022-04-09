@@ -8,17 +8,12 @@
       // remove previosu bulds
       "label": "PyPIPackage - build",
       "type": "shell",
-      "command": "python3 -m build"
+      "command": "python -m build"
     },
     {
       "label": "PyPIPackage - upload",
       "type": "shell",
-      "command": "python3 -m twine upload --config-file .pypirc dist/*"
-    },
-    {
-      "label": "UnitTests_RunAll",
-      "type": "shell",
-      "command": "python3 -m unittest tests/test*.py"
+      "command": "python -m twine upload --config-file .pypirc dist/*"
     },
     // Conda - package
     {
@@ -26,6 +21,41 @@
       "type": "shell",
       "command": "conda build  ./conda.recipe/ --output-folder ./build"
     },
+    // Venv
+    {
+      "label": "Venv - create",
+      "type": "shell",
+      "command": "python -m venv ./venv"
+    },
+    {
+      "label": "Venv - activate",
+      "type": "shell",
+      "command": "source ./venv/bin/activate"
+    },
+    // Pip
+    {
+      "label": "Pip - instal packages",
+      "type": "shell",
+      "command": "python -m pip install -r requirements.txt"
+    },
+
+    // Pipenv
+    {
+      "label": "Pipenv - instal packages",
+      "type": "shell",
+      "command": "pipenv install <package>"
+    },
+    {
+      "label": "Pipenv - activate venv",
+      "type": "shell",
+      "command": "pipenv shell"
+    },
+    {
+      "label": "Pipenv - run command",
+      "type": "shell",
+      "command": "pipenv run <command>"
+    },
+
     // {
     //   "label": "Conda - pkgUpload",
     //   "type": "shell",
@@ -44,14 +74,9 @@
       "command": "conda deactivate"
     },
     {
-      "label": "Conda - localEnvCreate",
-      "type": "shell",
-      "command": "conda env create --prefix ./env --file environment.yml"
-    },
-    {
       "label": "Conda - localEnvUpdate",
       "type": "shell",
-      "command": "conda env update --prefix ./env --file environment.yml --prune"
+      "command": "conda env update --prefix ./env --file environment-dev.yml --prune"
     },
     {
       "label": "Conda - localEnvExport",

@@ -21,7 +21,6 @@ requirements:
     - {{ dep }}
     {% endfor %}
 
-
 about:
   home: {{ sdata.get('url') }}
   license: {{ sdata.get('license') }}

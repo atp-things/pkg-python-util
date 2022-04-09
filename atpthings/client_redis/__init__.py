@@ -1,5 +1,5 @@
-"""ATPthings: Redis client
+""" atpthings.client_redis
 ===========================
-Description uhfiasjflskjodvfdssvfvd 
+Tools for communication with `redis` server. 
  
 """

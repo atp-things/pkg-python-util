@@ -1,6 +1,7 @@
 """
-ATPthings: Utilities  
-======================
+atpthings.util  
+--------------
+Utilities
 
-Basic utilities of ATPthings
+
 """
