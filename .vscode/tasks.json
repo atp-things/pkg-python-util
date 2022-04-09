@@ -19,7 +19,7 @@
     {
       "label": "Conda - pkgBuild",
       "type": "shell",
-      "command": "conda build  ./conda.recipe/ --output-folder ./build"
+      "command": "./scripts/buildPkgConda.sh"
     },
     // Venv
     {
@@ -101,7 +101,30 @@
       "type": "shell",
       "command": "git push origin --tags"
     },
-
+    // Linting and Formatting
+    {
+      "label": "lintFlake8",
+      "type": "shell",
+      "command": "flake8"
+    },
+    {
+      "label": "formatBlack",
+      "type": "shell",
+      "command": "black ."
+    },
+    // Git - pre-commit
+    {
+      "label": "preCommit - install",
+      "detail": "Install pre-commit hooks from .pre-commit-config.yaml to .git hooks.",
+      "type": "shell",
+      "command": "pre-commit install"
+    },
+    {
+      "label": "preCommit - run all",
+      "detail": "Run pre-commit hooks described in .pre-commit-config.yaml",
+      "type": "shell",
+      "command": "pre-commit run --all-files"
+    },
     // Docusaurus
     {
       "type": "npm",

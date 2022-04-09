@@ -21,7 +21,7 @@ def getKeys(dictionary: dict, keys: list) -> dict:
 
     Examples
     --------
-    
+
     >>> dict1 = {"one": 1, "two": 1,"three": 1}
     >>> keysList = ["one", "three"]
     >>> dict2 = atpthings.util.dictionary.getKeys(dict1,keysList)

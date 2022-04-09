@@ -2,6 +2,12 @@
   "files.associations": {
     "**/conda.recipe/meta.yaml": "jinja"
   },
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvironment": true,
+  // "python.terminal.activateEnvInCurrentTerminal": true,
   "jupyter.jupyterServerType": "local",
+
   "restructuredtext.confPath": "${workspaceFolder}/env/lib/python3.10/site-packages/numpydoc/tests/tinybuild"
 }

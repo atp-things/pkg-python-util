@@ -1,5 +1,5 @@
 """
-atpthings.util  
+atpthings.util
 --------------
 Utilities
 

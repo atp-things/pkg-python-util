@@ -4,11 +4,20 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+setuptools = "*"
+wheel = "*"
 black = "*"
 pandas = "*"
 numpy = "*"
+scikit-learn = "*"
+flake8 = "*"
+build = "*"
+twine = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
+
+[scripts]
+tests = "./scripts/runTests.sh"

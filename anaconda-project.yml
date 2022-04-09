@@ -24,8 +24,6 @@ variables: {}
 packages:
   - numpy
   - python
-  - intake
-  - intake-dremio>=0.2.1
   - black
   - pytest
 
@@ -33,7 +31,6 @@ channels:
   - conda-forge
   - defaults
   - andrazpolak
-  - https://conda.anaconda.org/pyviz/
 
 platforms:
   - linux-64

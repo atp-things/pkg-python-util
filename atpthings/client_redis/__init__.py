@@ -1,5 +1,5 @@
 """ atpthings.client_redis
 ===========================
-Tools for communication with `redis` server. 
- 
+Tools for communication with `redis` server.
+
 """
