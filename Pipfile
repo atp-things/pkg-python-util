@@ -13,6 +13,8 @@ scikit-learn = "*"
 flake8 = "*"
 build = "*"
 twine = "*"
+pydata-sphinx-theme = "*"
+numpydoc = "*"
 
 [dev-packages]
 

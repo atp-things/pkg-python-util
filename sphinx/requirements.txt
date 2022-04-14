@@ -1,0 +1,7 @@
+ipykernel
+myst-parser
+nbsite
+nbsphinx
+numpydoc
+pydata-sphinx-theme
+sphinxext

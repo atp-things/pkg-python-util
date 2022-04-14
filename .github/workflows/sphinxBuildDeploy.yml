@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sphinxBuildDeploy.yml"
+      - "sphinx/**"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Build Sphinx documentation
+      # TODO: use the latest version of sphinx
+      - uses: ammaraskar/sphinx-action@master
+        with:
+          docs-folder: "sphinx/"
+      # Deploy to branch
+      - name: Deploy to Git branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./sphinx/build
+          # publish_branch: website-sphinx
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
