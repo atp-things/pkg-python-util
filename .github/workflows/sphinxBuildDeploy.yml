@@ -30,7 +30,7 @@ jobs:
           pipenv install
       - name: Sphinx build
         run: |
-          ./scripts/buildPkgConda.sh
+          ./scripts/sphinixBuild.sh
       # Deploy to branch
       - name: Deploy to Git branch
         uses: peaceiris/actions-gh-pages@v3
