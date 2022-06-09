@@ -13,8 +13,11 @@ scikit-learn = "*"
 flake8 = "*"
 build = "*"
 twine = "*"
+# Sphinx
 pydata-sphinx-theme = "*"
 numpydoc = "*"
+myst-parser = "*"
+sphinx-copybutton= "*"
 
 [dev-packages]
 

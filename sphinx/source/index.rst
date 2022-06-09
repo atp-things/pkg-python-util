@@ -6,15 +6,16 @@
 
 :github_url: https://github.com/atp-things/pkg-python-util
 
-ATPthings API Reference
-===================================
+ATP-Things Python Package
+=========================
 
 
 .. toctree::
    :maxdepth: 2
 
-   atpthings.util
-   atpthings.client_redis
+   gettingStarted
+   examples/index
+   api/index
 
 
 Indices and Tables

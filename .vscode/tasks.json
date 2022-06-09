@@ -89,6 +89,11 @@
       "type": "shell",
       "command": "./scripts/sphinixBuild.sh"
     },
+    {
+      "label": "Sphinx - serve html port = 8080",
+      "type": "shell",
+      "command": "python -m http.server 8080 --directory ./sphinx/build/html/"
+    },
 
     // git
     {

@@ -36,6 +36,8 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     # "sphinxext.github",
+    "sphinx_copybutton",
+    "myst_parser",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -79,7 +81,28 @@ html_show_copyright = False
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
-
+html_theme_options = {
+    "logo": {
+        "text": "ATP-Things PyPkg",
+    },
+    "github_url": "https://github.com/atp-things/pkg-python-util",
+    "collapse_navigation": True,
+    "external_links": [
+        {
+            "name": "PYPI",
+            "url": "https://pypi.org/project/atpthings/",
+        },
+        {
+            "name": "Conda",
+            "url": "https://anaconda.org/andrazpolak/atpthings",
+        },
+        {
+            "name": "ATP-Things",
+            "url": "https://atp-things.github.io",
+        },
+    ],
+}
+html_context = {"default_mode": "light"}
 
 autosummary_generate = True
 
@@ -98,71 +121,8 @@ intersphinx_mapping = {
     "pyarrow": ("https://arrow.apache.org/docs/", None),
 }
 
-
-# -----------------------------------------------------------------------------
-# Source code links
-# -----------------------------------------------------------------------------
-# link_github = True
-# # You can add build old with link_github = False
-
-# if link_github:
-#     import inspect
-#     from packaging.version import parse
-
-#     extensions.append('sphinx.ext.linkcode')
-
-#     def linkcode_resolve(domain, info):
-#         """
-#         Determine the URL corresponding to Python object
-#         """
-#         if domain != 'py':
-#             return None
-
-#         modname = info['module']
-#         fullname = info['fullname']
-
-#         submod = sys.modules.get(modname)
-#         if submod is None:
-#             return None
-
-#         obj = submod
-#         for part in fullname.split('.'):
-#             try:
-#                 obj = getattr(obj, part)
-#             except AttributeError:
-#                 return None
-
-#         if inspect.isfunction(obj):
-#             obj = inspect.unwrap(obj)
-#         try:
-#             fn = inspect.getsourcefile(obj)
-#         except TypeError:
-#             fn = None
-#         if not fn or fn.endswith('__init__.py'):
-#             try:
-#                 fn = inspect.getsourcefile(sys.modules[obj.__module__])
-#             except (TypeError, AttributeError, KeyError):
-#                 fn = None
-#         if not fn:
-#             return None
-
-#         try:
-#             source, lineno = inspect.getsourcelines(obj)
-#         except (OSError, TypeError):
-#             lineno = None
-
-#         linespec = (f"#L{lineno:d}-L{lineno + len(source) - 1:d}"
-#                     if lineno else "")
-
-#         startdir = Path(matplotlib.__file__).parent.parent
-#         fn = os.path.relpath(fn, start=startdir).replace(os.path.sep, '/')
-
-#         if not fn.startswith(('matplotlib/', 'mpl_toolkits/')):
-#             return None
-
-#         version = parse(matplotlib.__version__)
-#         tag = 'main' if version.is_devrelease else f'v{version.public}'
-#         return ("https://github.com/matplotlib/matplotlib/blob"
-#                 f"/{tag}/lib/{fn}{linespec}")
-# else:
-#     extensions.append('sphinx.ext.viewcode')
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".txt": "markdown",
+    ".md": "markdown",
+}
