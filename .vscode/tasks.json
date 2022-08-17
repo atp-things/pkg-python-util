@@ -32,16 +32,14 @@
       "type": "shell",
       "command": "source ./venv/bin/activate"
     },
-    // Pip
-    {
-      "label": "Pip - instal packages",
-      "type": "shell",
-      "command": "python -m pip install -r requirements.txt"
-    },
-
     // Pipenv
     {
-      "label": "Pipenv - instal packages",
+      "label": "Pipenv - instal packages from file",
+      "type": "shell",
+      "command": "pipenv install"
+    },
+    {
+      "label": "Pipenv - instal <package>",
       "type": "shell",
       "command": "pipenv install <package>"
     },

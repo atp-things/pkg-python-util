@@ -11,8 +11,13 @@ pandas = "*"
 numpy = "*"
 scikit-learn = "*"
 flake8 = "*"
+pprintpp = "*"
+IPython = "*"
+
+# Build
 build = "*"
 twine = "*"
+
 # Sphinx
 pydata-sphinx-theme = "*"
 numpydoc = "*"
@@ -20,7 +25,7 @@ myst-parser = "*"
 sphinx-copybutton= "*"
 
 [dev-packages]
-
+pytest = "*"
 
 [requires]
 python_version = "3"
