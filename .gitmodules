@@ -1,0 +1,3 @@
+[submodule "atp_pyutil_dev"]
+	path = atp_pyutil_dev
+	url = https://github.com/atp-things/atp_pyutil_dev
