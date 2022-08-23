@@ -22,6 +22,7 @@ jobs:
           python-version: "3.x"
       - name: Install pipenv
         run: |
+          mkdir .venv
           python -m pip install --upgrade pip
           pip install pipenv
           pipenv install
