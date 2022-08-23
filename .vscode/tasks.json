@@ -88,9 +88,9 @@
       "command": "./scripts/sphinixBuild.sh"
     },
     {
-      "label": "Sphinx - serve html port = 8080",
+      "label": "Sphinx - serve html port = 8081",
       "type": "shell",
-      "command": "python -m http.server 8080 --directory ./sphinx/build/html/"
+      "command": "python -m http.server 8081 --directory ./sphinx/build/html/"
     },
 
     // git
@@ -150,12 +150,22 @@
       "problemMatcher": [],
       "label": "Docusaurus - serve"
     },
+    // {
+    //   "type": "npm",
+    //   "script": "deploy",
+    //   "path": "website/",
+    //   "problemMatcher": [],
+    //   "label": "Docusaurus - deploy"
+    // },
     {
-      "type": "npm",
-      "script": "deploy",
-      "path": "website/",
+      "label": "npm: deploy - website command",
+      "type": "shell",
+      "command": "GIT_USER=andrazpolak DEPLOYMENT_BRANCH=gh-pages npm run deploy",
       "problemMatcher": [],
-      "label": "Docusaurus - deploy"
+      "detail": "Deploy website to docusaurus webpage.",
+      "options": {
+        "cwd": "${workspaceFolder}/website/"
+      }
     }
   ]
 }

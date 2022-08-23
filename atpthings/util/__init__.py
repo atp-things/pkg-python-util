@@ -5,3 +5,4 @@ Utilities
 
 
 """
+from . import dictionary
