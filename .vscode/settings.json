@@ -9,5 +9,6 @@
   // "python.terminal.activateEnvInCurrentTerminal": true,
   "jupyter.jupyterServerType": "local",
 
-  "restructuredtext.confPath": "${workspaceFolder}/env/lib/python3.10/site-packages/numpydoc/tests/tinybuild"
+  "restructuredtext.confPath": "${workspaceFolder}/env/lib/python3.10/site-packages/numpydoc/tests/tinybuild",
+  "cSpell.words": ["atpthings"]
 }

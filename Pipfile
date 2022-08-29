@@ -13,23 +13,21 @@ scikit-learn = "*"
 flake8 = "*"
 pprintpp = "*"
 IPython = "*"
-
 # Build
 build = "*"
 twine = "*"
-
 # Sphinx
 pydata-sphinx-theme = "*"
 numpydoc = "*"
 myst-parser = "*"
 sphinx-copybutton= "*"
+pymongo = {extras = ["srv"], version = "*"}
 
 [dev-packages]
 pytest = "*"
 
 [requires]
 python_version = "3"
-
 
 [scripts]
 tests = "./scripts/runTests.sh"
