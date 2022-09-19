@@ -1,10 +1,7 @@
 """
-atpthings.util.dictionary
--------------------------
+atpthings.dict.get
+------------------
 """
-import json
-
-# manipulation
 
 
 def get_keys(dict_: dict, keys: list) -> dict:
@@ -59,45 +56,4 @@ def get_values(dict_: dict, keys: list) -> list:
     """
     # TODO: support for None keys list -> return all values
 
-    return [dict_[key] for key in dict_.keys() & keys]
-
-
-# list of dict
-def convert_list_to_dict(list_of_dict: list, key: str) -> dict:
-    """Convert List of dictionaries to dictionary.
-
-    Parameters
-    ----------
-    list_of_dict : list
-        List of dictionaries.
-    key : str
-        Key which value will be used for primary key of dict.
-
-    Returns
-    -------
-    dict
-        Dictionary created from list of dictionaries.
-    """
-    dict_ = {}
-    duplicates_counter = 0
-    for item in list_of_dict:
-        key_name = item[key]
-        if key_name in dict_:
-            key_name = f"{key_name}_{duplicates_counter}"
-            duplicates_counter += 1
-        dict_[key_name] = item
-
-    return dict_
-
-
-# load
-
-
-def load(path: str) -> dict:
-    with open(path) as file_:
-        ret = dict(json.load(file_))
-
-    return ret
-
-
-# save
+    return [dict_[item] for item in keys]

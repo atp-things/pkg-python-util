@@ -53,7 +53,29 @@
       "type": "shell",
       "command": "pipenv run <command>"
     },
+    {
+      "label": "Dev: - script",
+      "type": "shell",
+      "command": "pipenv run python dev/dev_atp_dict.py"
+    },
 
+    {
+      "label": "Test: all",
+      "type": "shell",
+      "command": "pipenv run pytest tests -xs"
+    },
+
+    {
+      "label": "Test: file",
+      "type": "shell",
+      "command": "pipenv run pytest tests/test_atp_dict.py -x"
+    },
+
+    {
+      "label": "Test: function",
+      "type": "shell",
+      "command": "pipenv run pytest tests/test_atp_dict.py::test_first -x"
+    },
     // {
     //   "label": "Conda - pkgUpload",
     //   "type": "shell",

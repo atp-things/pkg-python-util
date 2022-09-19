@@ -9,7 +9,5 @@ exclude =
     .pytest_cache,
     sphinx,
 max-line-length=88
-; ignore = E,
-;          W
 select = C,E,F,W,B,B950
-extend-ignore = E203, E501, E722, F401, F403
+extend-ignore = E203, E501, E722, F401, F403, W503

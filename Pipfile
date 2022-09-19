@@ -22,9 +22,11 @@ numpydoc = "*"
 myst-parser = "*"
 sphinx-copybutton= "*"
 pymongo = {extras = ["srv"], version = "*"}
+pytest = "*"
 
 [dev-packages]
 pytest = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3"

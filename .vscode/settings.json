@@ -8,6 +8,9 @@
   "python.terminal.activateEnvironment": true,
   // "python.terminal.activateEnvInCurrentTerminal": true,
   "jupyter.jupyterServerType": "local",
+  "svg.preview.background": "transparent",
+  "autoDocstring.docstringFormat": "numpy",
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
 
   "restructuredtext.confPath": "${workspaceFolder}/env/lib/python3.10/site-packages/numpydoc/tests/tinybuild",
   "cSpell.words": ["atpthings"]
