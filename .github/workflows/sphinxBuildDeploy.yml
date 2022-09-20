@@ -23,7 +23,11 @@ jobs:
           pipenv install
       - name: Sphinx build
         run: |
-          ./scripts/sphinixBuild.sh
+          pipenv shell
+          cd ./sphinx || exit
+          make clean
+          make html
+          cd .. || exit
       # Deploy to branch
       - name: Deploy to Git branch
         uses: peaceiris/actions-gh-pages@v3
