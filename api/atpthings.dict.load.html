@@ -6,41 +6,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>ATP-Things Python Package &#8212; atpthings 0.0.14 documentation</title>
+    <title>atpthings.dict.load &#8212; atpthings 0.0.14 documentation</title>
   <script>
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
 
   
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/6.1.2/css/all.min.css">
+    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting started" href="introduction/index.html" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/atpthings.dict.load';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="atpthings.dict.save" href="atpthings.dict.save.html" />
+    <link rel="prev" title="Input/output" href="dict.io.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -61,7 +62,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
       
-<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
@@ -80,7 +81,7 @@
   
 
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="../index.html">
 
   
   
@@ -110,21 +111,21 @@
     <ul id="navbar-main-elements" class="navbar-nav">
         
                 <li class="nav-item">
-                    <a class="nav-link" href="introduction/index.html">
+                    <a class="nav-link" href="../introduction/index.html">
                         Getting started
                     </a>
                 </li>
                 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="examples/index.html">
+                    <a class="nav-link" href="../examples/index.html">
                         Examples
                     </a>
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="api/index.html">
+                <li class="nav-item current active">
+                    <a class="nav-link" href="index.html">
                         API Reference
                     </a>
                 </li>
@@ -210,7 +211,7 @@
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
   
   <div class="sidebar-header-items sidebar-primary__section">
@@ -226,21 +227,21 @@
     <ul id="navbar-main-elements" class="navbar-nav">
         
                 <li class="nav-item">
-                    <a class="nav-link" href="introduction/index.html">
+                    <a class="nav-link" href="../introduction/index.html">
                         Getting started
                     </a>
                 </li>
                 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="examples/index.html">
+                    <a class="nav-link" href="../examples/index.html">
                         Examples
                     </a>
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="api/index.html">
+                <li class="nav-item current active">
+                    <a class="nav-link" href="index.html">
                         API Reference
                     </a>
                 </li>
@@ -304,6 +305,64 @@
   </div>
 
   
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="dict.html">
+   Dict
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="dict.io.html">
+     Input/output
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       atpthings.dict.load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="atpthings.dict.save.html">
+       atpthings.dict.save
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dict.get.html">
+     Get
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dict.convert.html">
+     Convert
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
 
   
   <div class="sidebar-end-items sidebar-primary__section">
@@ -325,24 +384,28 @@
             
             <article class="bd-article" role="main">
               
-  <section id="atp-things-python-package">
-<h1>ATP-Things Python Package<a class="headerlink" href="#atp-things-python-package" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction/index.html">Getting started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction/index.html#install-package">Install package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction/index.html#usage">Usage</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">API Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api/dict.html">Dict</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <section id="atpthings-dict-load">
+<h1>atpthings.dict.load<a class="headerlink" href="#atpthings-dict-load" title="Permalink to this heading">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="atpthings.dict.load">
+<span class="sig-prename descclassname"><span class="pre">atpthings.dict.</span></span><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a></span></span><a class="headerlink" href="#atpthings.dict.load" title="Permalink to this definition">#</a></dt>
+<dd><p>Load dictionary from file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>path</strong><span class="classifier">str</span></dt><dd><p>Path to file.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>dict</dt><dd><p>Dictionary</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
@@ -353,10 +416,17 @@
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='right-next' id="next-link" href="introduction/index.html" title="next page">
+  <a class='left-prev' id="prev-link" href="dict.io.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Input/output</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="atpthings.dict.save.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Getting started</p>
+      <p class="prev-next-title">atpthings.dict.save</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>
@@ -376,7 +446,7 @@
 <div class="toc-item">
   
 <div class="tocsection sourcelink">
-    <a href="_sources/index.rst.txt">
+    <a href="../_sources/api/atpthings.dict.load.rst.txt">
         <i class="fas fa-file-alt"></i> Show Source
     </a>
 </div>
@@ -400,7 +470,7 @@
   
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
 
   <footer class="bd-footer"><div class="bd-footer__inner container">
   
