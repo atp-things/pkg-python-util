@@ -23,10 +23,9 @@ jobs:
           pipenv install
       - name: Sphinx build
         run: |
-          pipenv shell
           cd ./sphinx || exit
-          make clean
-          make html
+          pipenv run make clean
+          pipenv run make html
           cd .. || exit
       # Deploy to branch
       - name: Deploy to Git branch
