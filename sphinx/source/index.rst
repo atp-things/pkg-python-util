@@ -16,11 +16,3 @@ ATP-Things Python Package
    gettingStarted
    examples/index
    api/index
-
-
-Indices and Tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

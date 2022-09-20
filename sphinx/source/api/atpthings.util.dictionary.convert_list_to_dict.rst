@@ -1,6 +1,0 @@
-﻿atpthings.util.dictionary.convert\_list\_to\_dict
-=================================================
-
-.. currentmodule:: atpthings.util.dictionary
-
-.. autofunction:: convert_list_to_dict
