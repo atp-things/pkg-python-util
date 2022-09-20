@@ -22,7 +22,7 @@ copyright = "2022, andrazpolak"
 author = "andrazpolak"
 
 # The full version, including alpha/beta/rc tags
-release = "0.0.14"
+release = "0.0.15"
 
 
 # -- General configuration ---------------------------------------------------

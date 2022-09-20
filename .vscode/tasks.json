@@ -8,12 +8,12 @@
       // remove previosu bulds
       "label": "PyPIPackage - build",
       "type": "shell",
-      "command": "python -m build"
+      "command": "pipenv run python -m build"
     },
     {
       "label": "PyPIPackage - upload",
       "type": "shell",
-      "command": "python -m twine upload --config-file .pypirc dist/*"
+      "command": "pipenv run python -m twine upload --config-file .pypirc dist/*"
     },
     // Conda - package
     {
