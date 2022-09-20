@@ -3,10 +3,10 @@ Get
 ===
 
 
-.. currentmodule:: atpthings
+.. currentmodule:: atpthings.dict
 
 .. autosummary::
    :toctree:
 
-   dict.get_keys
-   dict.get_values
+   get_keys
+   get_values

@@ -3,10 +3,10 @@ Input/output
 ============
 
 
-.. currentmodule:: atpthings
+.. currentmodule:: atpthings.dict
 
 .. autosummary::
    :toctree:
 
-   dict.load
-   dict.save
+   load
+   save

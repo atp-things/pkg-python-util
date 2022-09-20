@@ -13,6 +13,6 @@ ATP-Things Python Package
 .. toctree::
    :maxdepth: 2
 
-   gettingStarted
+   introduction/index
    examples/index
    api/index

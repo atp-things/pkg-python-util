@@ -3,9 +3,9 @@ Convert
 =======
 
 
-.. currentmodule:: atpthings
+.. currentmodule:: atpthings.dict
 
 .. autosummary::
    :toctree:
 
-   dict.list_to_dict
+   list_to_dict
