@@ -136,3 +136,4 @@ dmypy.json
 .pypirc
 
 /builds
+.DS_Store
