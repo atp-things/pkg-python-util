@@ -1,7 +1,10 @@
 # %% Dict input/output
 import atpthings as atp
+import os
 
+print("varible:", os.environ["MONGODB_ATP_CLOUD_PASSWORD"])
 # %% Load dict
+
 
 dict_1 = atp.dict.load("data_samples/dict_sample_001.json")
 print("Dict:", dict_1)

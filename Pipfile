@@ -26,7 +26,6 @@ pymongo = {extras = ["srv"], version = "*"}
 pytest = "*"
 
 [dev-packages]
-pytest = "*"
 ipykernel = "*"
 
 [requires]
