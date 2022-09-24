@@ -6,4 +6,5 @@ set -e
 cd ./sphinx || exit
 pipenv run make clean
 pipenv run make html
+
 cd .. || exit
