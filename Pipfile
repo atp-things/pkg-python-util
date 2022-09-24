@@ -25,6 +25,7 @@ typing_extensions="*"
 pymongo = {extras = ["srv"], version = "*"}
 pytest = "*"
 versioneer = "*"
+pip = "*"
 
 [dev-packages]
 ipykernel = "*"
