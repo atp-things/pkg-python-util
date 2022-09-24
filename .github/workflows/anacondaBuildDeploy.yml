@@ -35,7 +35,7 @@ jobs:
         run: |
           conda config --append channels conda-forge
           conda config --append channels  https://conda.anaconda.org/pyviz/
-          conda install -y conda-build anaconda-client versioneer
+          conda install -y conda-build anaconda-client
           conda config --set anaconda_upload no
       - name: Anaconda Show
         run: conda config --show

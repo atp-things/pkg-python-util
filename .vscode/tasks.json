@@ -60,19 +60,19 @@
     },
 
     {
-      "label": "Test: all",
+      "label": "Test - all",
       "type": "shell",
       "command": "pipenv run pytest tests -xs"
     },
 
     {
-      "label": "Test: file",
+      "label": "Test - file",
       "type": "shell",
       "command": "pipenv run pytest tests/test_atp_dict.py -x"
     },
 
     {
-      "label": "Test: function",
+      "label": "Test - function",
       "type": "shell",
       "command": "pipenv run pytest tests/test_atp_dict.py::test_first -x"
     },
