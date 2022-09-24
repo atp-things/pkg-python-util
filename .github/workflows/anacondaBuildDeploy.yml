@@ -6,11 +6,10 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package to Anaconda
+name: Build and upload Python Package to Anaconda
 
 on:
   push:
-    # branches: [main]
     tags:
       - "v*.*.*"
   workflow_dispatch:

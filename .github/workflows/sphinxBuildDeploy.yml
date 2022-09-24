@@ -1,8 +1,9 @@
-name: Deploy to GitHub Pages
+name: Build Sphinex doc and deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    tags:
+      - "v*.*.*"
   workflow_dispatch:
 
 jobs:

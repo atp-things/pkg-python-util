@@ -14,6 +14,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath("../.."))
+import atpthings
 
 # -- Project information -----------------------------------------------------
 
@@ -22,9 +23,9 @@ copyright = "2022, andrazpolak"
 author = "andrazpolak"
 
 # The full version, including alpha/beta/rc tags
-release = "0.0.15"
-
-
+version = atpthings.__version__
+release = str(version)
+print(f"Building Documentation for atpthings: {atpthings.__version__}")
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -101,6 +102,11 @@ html_theme_options = {
             "url": "https://atp-things.github.io",
         },
     ],
+    "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"],
+    "switcher": {
+        "json_url": "/versions.json",
+        "version_match": version,
+    },
 }
 html_context = {"default_mode": "light"}
 

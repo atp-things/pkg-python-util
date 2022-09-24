@@ -9,6 +9,7 @@
 ATP-Things Python Package
 =========================
 
+**Date**: |today| **Version**: |version|
 
 .. toctree::
    :maxdepth: 2
