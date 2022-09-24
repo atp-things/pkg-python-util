@@ -24,6 +24,7 @@ sphinx-copybutton= "*"
 typing_extensions="*"
 pymongo = {extras = ["srv"], version = "*"}
 pytest = "*"
+versioneer = "*"
 
 [dev-packages]
 ipykernel = "*"
