@@ -4,7 +4,7 @@ atpthings.dict.convert
 """
 
 
-def list_to_dict(list_of_dict: list, key: str) -> dict:
+def list_to_dict(list_of_dict: list, key: str, value: str = None) -> dict:
     """Convert list of dictionaries to dictionary by key.
 
     Parameters
@@ -13,6 +13,8 @@ def list_to_dict(list_of_dict: list, key: str) -> dict:
         List of dictionaries.
     key : str
         Key which value will be used for primary key of dict.
+    value : str, optional (default whole dictionary)
+        The key in dictionary to be copied as a vlue.
 
     Returns
     -------
@@ -26,6 +28,9 @@ def list_to_dict(list_of_dict: list, key: str) -> dict:
         if key_name in dict_:
             key_name = f"{key_name}_{duplicates_counter}"
             duplicates_counter += 1
-        dict_[key_name] = item
+        if value is None:
+            dict_[key_name] = item
+        else:
+            dict_[key_name] = item[value]
 
     return dict_
