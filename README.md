@@ -1,7 +1,8 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Github release](https://img.shields.io/github/release/atp-things/pkg-python-util.svg?label=tag&colorB=11ccbb)
 ![](https://anaconda.org/andrazpolak/atpthings/badges/version.svg)
 [![PyPI](https://badge.fury.io/py/atpthings.svg)](https://badge.fury.io/py/atpthings)
-[![Github release](https://img.shields.io/github/release/atp-things/pkg-python-util.svg?label=tag&colorB=11ccbb)
+
 
 # ATP-things
 
