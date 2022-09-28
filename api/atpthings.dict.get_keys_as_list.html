@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Examples &#8212; atpthings 0.0.38 documentation</title>
+    <title>atpthings.dict.get_keys_as_list &#8212; atpthings 0.0.38 documentation</title>
   <script>
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
@@ -38,15 +38,15 @@
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/atpthings.dict.get_keys_as_list';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.0.38';
         </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="API Reference" href="../api/index.html" />
-    <link rel="prev" title="Getting started" href="../introduction/index.html" />
+    <link rel="next" title="atpthings.dict.get_values" href="atpthings.dict.get_values.html" />
+    <link rel="prev" title="atpthings.dict.get_keys" href="atpthings.dict.get_keys.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -122,15 +122,15 @@
                 </li>
                 
 
-                <li class="nav-item current active">
-                    <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <a class="nav-link" href="../examples/index.html">
                         Examples
                     </a>
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../api/index.html">
+                <li class="nav-item current active">
+                    <a class="nav-link" href="index.html">
                         API Reference
                     </a>
                 </li>
@@ -228,7 +228,7 @@
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
   
   <div class="sidebar-header-items sidebar-primary__section">
@@ -250,15 +250,15 @@
                 </li>
                 
 
-                <li class="nav-item current active">
-                    <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <a class="nav-link" href="../examples/index.html">
                         Examples
                     </a>
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../api/index.html">
+                <li class="nav-item current active">
+                    <a class="nav-link" href="index.html">
                         API Reference
                     </a>
                 </li>
@@ -334,6 +334,74 @@
   </div>
 
   
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="dict.html">
+   Dict
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="dict.io.html">
+     Input/output
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="dict.get.html">
+     Get
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="atpthings.dict.get_keys.html">
+       atpthings.dict.get_keys
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       atpthings.dict.get_keys_as_list
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="atpthings.dict.get_values.html">
+       atpthings.dict.get_values
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="atpthings.dict.get_values_from_dict_list.html">
+       atpthings.dict.get_values_from_dict_list
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dict.convert.html">
+     Convert
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
 
   
   <div class="sidebar-end-items sidebar-primary__section">
@@ -355,10 +423,28 @@
             
             <article class="bd-article" role="main">
               
-  <section id="examples">
-<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="atpthings-dict-get-keys-as-list">
+<h1>atpthings.dict.get_keys_as_list<a class="headerlink" href="#atpthings-dict-get-keys-as-list" title="Permalink to this heading">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="atpthings.dict.get_keys_as_list">
+<span class="sig-prename descclassname"><span class="pre">atpthings.dict.</span></span><span class="sig-name descname"><span class="pre">get_keys_as_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><span class="pre">list</span></a></span></span><a class="headerlink" href="#atpthings.dict.get_keys_as_list" title="Permalink to this definition">#</a></dt>
+<dd><p>Get keys from dictionary as list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>dict_</strong><span class="classifier">dict</span></dt><dd><p>Dictionary.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>list</dt><dd><p>List of all keys in dictionary (1. level).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
@@ -369,17 +455,17 @@
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../introduction/index.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="atpthings.dict.get_keys.html" title="previous page">
       <i class="fas fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Getting started</p>
+          <p class="prev-next-title">atpthings.dict.get_keys</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="../api/index.html" title="next page">
+  <a class='right-next' id="next-link" href="atpthings.dict.get_values.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">API Reference</p>
+      <p class="prev-next-title">atpthings.dict.get_values</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>
@@ -394,12 +480,33 @@
               
 <div class="toc-item">
   
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atpthings.dict.get_keys_as_list">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     get_keys_as_list()
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
 </div>
 
 <div class="toc-item">
   
 <div class="tocsection sourcelink">
-    <a href="../_sources/examples/index.rst.txt">
+    <a href="../_sources/api/atpthings.dict.get_keys_as_list.rst.txt">
         <i class="fas fa-file-alt"></i> Show Source
     </a>
 </div>
