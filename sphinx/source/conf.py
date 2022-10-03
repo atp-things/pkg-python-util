@@ -1,19 +1,8 @@
 # Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../.."))
+sys.path.insert(0, os.path.abspath("../../src/"))
 import atpthings
 
 # -- Project information -----------------------------------------------------
@@ -22,7 +11,6 @@ project = "atpthings"
 copyright = "2022, andrazpolak"
 author = "andrazpolak"
 
-# The full version, including alpha/beta/rc tags
 version = atpthings.__version__
 release = str(version)
 print(f"Building Documentation for atpthings: {atpthings.__version__}")
@@ -56,31 +44,13 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 pygments_style = "sphinx"
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
+# The theme
 html_theme = "pydata_sphinx_theme"
-# html_theme = "alabaster"
-
-# Logo
-# html_logo = '_static/numpylogo.svg'
-# html_favicon = '_static/favicon/favicon.ico'
-
-# html_theme_options = {
-#     "logo_link": "index",
-#     "github_url": "https://github.com/atp-things/pkg-python-util",
-#     "collapse_navigation": True,
-# }
-
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 html_show_copyright = False
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 html_theme_options = {
     "logo": {
@@ -108,10 +78,11 @@ html_theme_options = {
         "version_match": version,
     },
 }
+html_logo = "./_static/logo-square.svg"
+html_favicon = "./_static/logo-square.svg"
 html_context = {"default_mode": "light"}
 
 autosummary_generate = True
-
 intersphinx_mapping = {
     "dateutil": ("https://dateutil.readthedocs.io/en/latest/", None),
     "matplotlib": ("https://matplotlib.org/stable/", None),
