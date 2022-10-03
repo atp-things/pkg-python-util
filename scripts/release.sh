@@ -17,6 +17,6 @@ version_new="$(increment_version $release_string 2)"
 echo "Version (new)  $version_new"
 tag_name="$(echo -n "v$version_new")"
 echo "Create git tag $tag_name"
-git tag $version_new
+git tag $tag_name
 echo "Push tags"
 git push --tags
