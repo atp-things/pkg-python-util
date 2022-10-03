@@ -103,6 +103,12 @@
       "type": "shell",
       "command": "conda-env export --prefix ./env --file environmentExport.yml"
     },
+    // Bash
+    {
+      "label": "Bash - package release (create git tag)",
+      "type": "shell",
+      "command": "./scripts/release.sh"
+    },
     // Sphinx build
     {
       "label": "Sphinx - build html",
