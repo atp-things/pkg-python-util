@@ -9,9 +9,9 @@
 name: Build and upload Python Package to Anaconda
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  # push:
+  # tags:
+  # - "v*.*.*"
   workflow_dispatch:
 
 jobs:
