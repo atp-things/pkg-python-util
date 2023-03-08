@@ -6,3 +6,51 @@ requires = [
     "versioneer"
 ]
 build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "atpthings"
+dynamic = ["version"]
+authors = [
+    {name = "Andraz Polak", email = "andrazpolak@gmail.com"},
+]
+description = "ATP-things python package"
+readme = "README.md"
+# python_requires = ">=3.8"
+requires-python = '>=3.8'
+keywords = ["atpthings", "iot"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pymongo",
+  "pandas",
+  "pyyaml",
+]
+
+[project.urls]
+homepage = 'https://github.com/atp-things/pkg-python-util'
+documentation = 'https://atp-things.github.io/pkg-python-util/'
+repository = 'https://github.com/atp-things/pkg-python-util'
+
+
+# [tool.setuptools]
+# include-package-data = true
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+"versioneer" = "versioneer:main"
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "atpthings/_version.py"
+versionfile_build = "atpthings/_version.py"
+tag_prefix = "v"
+parentdir_prefix = "atpthings-"
