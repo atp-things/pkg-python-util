@@ -21,38 +21,7 @@
       "type": "shell",
       "command": "./scripts/buildPkgConda.sh"
     },
-    // Venv
-    {
-      "label": "Venv - create",
-      "type": "shell",
-      "command": "python -m venv ./venv"
-    },
-    {
-      "label": "Venv - activate",
-      "type": "shell",
-      "command": "source ./venv/bin/activate"
-    },
-    // Pipenv
-    {
-      "label": "Pipenv - instal packages from file",
-      "type": "shell",
-      "command": "pipenv install"
-    },
-    {
-      "label": "Pipenv - instal <package>",
-      "type": "shell",
-      "command": "pipenv install <package>"
-    },
-    {
-      "label": "Pipenv - activate venv",
-      "type": "shell",
-      "command": "pipenv shell"
-    },
-    {
-      "label": "Pipenv - run command",
-      "type": "shell",
-      "command": "pipenv run <command>"
-    },
+
     {
       "label": "Dev: - script",
       "type": "shell",
@@ -75,33 +44,6 @@
       "label": "Test - function",
       "type": "shell",
       "command": "pipenv run pytest tests/test_atp_dict.py::test_first -x"
-    },
-    // {
-    //   "label": "Conda - pkgUpload",
-    //   "type": "shell",
-    //   "command": "anaconda",
-    //   "args": ["upload", "./build/noarch/*-py_0.tar.bz2"],
-    //   "options": {
-    //     "env": {
-    //       "ANACONDA_API_TOKEN": "an-e6df2241-ae6f-4470-9f70"
-    //     }
-    //   }
-    // },
-    // Conda - dev enviroement
-    {
-      "label": "CondaEnv - deactivate",
-      "type": "shell",
-      "command": "conda deactivate"
-    },
-    {
-      "label": "Conda - localEnvUpdate",
-      "type": "shell",
-      "command": "conda env update --prefix ./env --file environment-dev.yml --prune"
-    },
-    {
-      "label": "Conda - localEnvExport",
-      "type": "shell",
-      "command": "conda-env export --prefix ./env --file environmentExport.yml"
     },
     // Bash
     {
