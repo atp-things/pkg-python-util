@@ -16,7 +16,6 @@ authors = [
 ]
 description = "ATP-things python package"
 readme = "README.md"
-# python_requires = ">=3.8"
 requires-python = '>=3.8'
 keywords = ["atpthings", "iot"]
 license = {text = "MIT"}
